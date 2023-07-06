@@ -88,16 +88,16 @@ DATABASES = {
 }
 
 # If you need to use Postgresql, you can use this section
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'PyEditorial',
-#         'USER': 'postgres',
-#         'PASSWORD': 'great123',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'PyEditorial',
+         'USER': 'postgres',
+         'PASSWORD': 'great123',
+         'HOST': 'localhost',
+         'PORT': '',
+     }
+ }
 
 
 # Password validation
