@@ -10,7 +10,7 @@ services:
     depends_on:
       - postgres
     networks:
-      - pyeditorial_network
+      - localhost
 
   postgres:
     image: postgres:14.8
@@ -27,7 +27,7 @@ services:
       - ./postgres-data:/var/lib/postgresql/data
       - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
     networks:
-      - pyeditorial_network
+      - localhost
 
   web:
     build:
@@ -36,7 +36,7 @@ services:
     ports:
       - "80:8000"
     networks:
-      - pyeditorial_network
+      - localhost
 
 networks:
-    pyeditorial_network:
+    localhost:
