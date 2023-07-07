@@ -1,5 +1,6 @@
 version: '3.7'
-nginx:
+services:
+  nginx:
     image: nginx:1.25
     container_name: nginx
     ports:
@@ -11,7 +12,6 @@ nginx:
     networks:
       - pyeditorial
 
-services:
   postgres:
     image: postgres:14.8
     restart: always
@@ -23,17 +23,23 @@ services:
       - POSTGRES_PASSWORD=great123
       - POSTGRES_DB=pyeditorialdb
     volumes:
-      #- ./pgdata:/var/lib/postgresql/data
       - ./postgres-data:/var/lib/postgresql/data
-      - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     networks:
       - pyeditorial
 
   web:
     build:
-      context: .
-      dockerfile: Dockerfile
+     context: .
+     dockerfile: Dockerfile
     container_name: app
+    depends_on:
+      postgres:
+        condition: service_healthy
     ports:
       - "8000:8000"
     networks:
