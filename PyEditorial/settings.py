@@ -94,7 +94,7 @@ DATABASES = {
          'NAME': 'PyEditorial',
          'USER': 'postgres',
          'PASSWORD': 'great123',
-         'HOST': 'localhost',
+         'HOST': 'postgres',
          'PORT': '5432',
      }
  }
