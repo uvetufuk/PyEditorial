@@ -1,114 +1,62 @@
 # PyEditorial
-A free, open-source Blog CMS based on the "Django" and "Editorial" HTML5 theme.
 
-![](https://img.shields.io/github/stars/mavenium/PyEditorial) 
-[![](https://img.shields.io/github/forks/mavenium/PyEditorial)](https://github.com/mavenium/PyEditorial/fork)
-[![](https://img.shields.io/github/issues/mavenium/PyEditorial)](https://github.com/mavenium/PyEditorial/issues)
-![](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fmavenium%2FPyEditorial)
+**_Built with;_**
 
-------------
-### Features
+[![Linux][#linux]][@linux] [![Bash][#bash]][@bash] [![Docker][#docker]][@docker] [![Git][#git]][@git] [![Python][#python]][@python] [![Django][#django]][@django] [![Postgres][#Postgres]][@postgres] 
 
-- "Blog" section to create and edit a blog + Blog Category
-- "Videocast" section to create and edit a videocast + Videocast Category
-- "Podcast" section to create and edit a podcast + podcast Category
-- "Skill" section to create and edit a skill
-- "CONSTANCE" Section to manage dynamic Django settings (Blog title, Social Networks links and ...)
-- Displays the list of Blog posts as paged in archive
-- Displays the list of Videocast as paged in archive
-- Displays the list of podcast as paged in archive
-- Used "Django Admin" to manage all models
-- Used "Editorial" theme by HTML5 UP
-- Used "Sqlite" to create DB
-- Used "CKEditor"
-- Translation ready
-- Auth system (login & logout and forget a password)
-- Front-end forms to create new object
-------------
-[![](https://s16.picofile.com/file/8419124942/buy_me_a_coffee.png)](https://www.blockchain.com/btc/payment_request?address=1ChqZPGhxpn6HB1WuQh55S3Mf8RydxMiFk&amount=0.00018711 "Buy me a coffee")
-- You can buy me a coffee so I can turn it into more open source projects :)
-------------
-### Special Thanks
+---
+## Disclaimer
 
-| Python | Django | Pycharm |
-| ------------- | ------------- | ------------- |
-| [![](https://s17.picofile.com/file/8418101118/python.png)](https://www.python.org "Python")  | [![](https://s17.picofile.com/file/8418100976/django.png)](https://www.djangoproject.com "Django")  | [![](https://s17.picofile.com/file/8418101034/pycharm.png)](https://www.jetbrains.com/pycharm/ "Pycharm")  |
+A free, open-source Blog CMS based on the "Django" and "Editorial" HTML5 theme. You can find the official repository [here](https://github.com/mavenium/PyEditorial).
 
-------------
-### Screenshots
+This is a project based on it. It's just for personal interest and nothing more. Please follow the official repository.
 
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Index.png)
-> Index Page
+---
 
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Archive.png)
-> Archive Page
+## Features
+* PyEditorial Project
+* Dockerfile (featuring fixed container runtime along with runtime script)  
+* Docker-Compose (includes Nginx and PostgreSQL)
+* Run Script (Full environment installation on a clean Ubuntu OS)
 
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Blog-Single.png)
-> Blog Single Page
+## Instructions
+To install the project on a fresh Ubuntu server please run the following commands:
 
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Podcast-Single.png)
-> Podcast Single Page
-
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Videocast-Single.png)
-> Videocast Single Page
-
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Admin.png)
-> Admin Area
-
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Constance.png)
-> Dynamic Django Settings
-
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Blog-Admin.png)
-> Blog Section
-
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Add-Blog.png)
-> Add Blog
-
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Add-Videocast.png)
-> Add Videocast
-
-![](https://github.com/mavenium/PyEditorial/blob/master/Screenshots/Add-Skill.png)
-> Add Skill
-
-![](https://raw.githubusercontent.com/mavenium/PyEditorial/master/Screenshots/Add-Podcast.png)
-> Add Podcast
-
-------------
-### How to install and run (GNU/Linux and Mac)
-                
-1. Install `git`,`python3`, `pip3`, `virtualenv` in your operating system
-2. Create a development environment ready by using these commands
 ```
-git clone https://github.com/mavenium/PyEditorial		# clone the project
-cd PyEditorial		                                        # go to the project DIR
-virtualenv -p python3 .venv		                        # Create virtualenv named .venv
-source .venv/bin/activate		                        # Active virtualenv named .venv
-pip install -r requirements.txt		                        # Install project requirements in .venv
-python manage.py makemigrations		                        # Create migrations files
-python manage.py migrate		                        # Create database tables
-python manage.py collectstatic		                        # Create statics files
-python manage.py runserver		                        # Run the project
+git pull https://github.com/uvetufuk/PyEditorial.git
+cd PyEditorial
+./script.sh
 ```
-3. Go to  `http://127.0.0.1:8000/` to use project
-------------
-------------
-### Run with Docker
 
-1. Install Docker on your operating system
-2. Install docker-compose on your operating system
-3. Run the following command to create and run the project
-```
-docker-compose up [-d]
-```
-3. Go to  `http://127.0.0.1:8000/` to use project
-------------
+This will install docker and docker-compose and run the docker-compose in the repository. You can check out the `localhost` on your browser to see the PyEditorial.
 
-### Notes
-The Editorial template is released under license "Creative Commons Attribution 3.0 Unported".
+---
+#### _Diagram_
 
-------------
-### TODO list
+![Diagram][#drawio]
 
-- [x] Create search section
-- [x] Create user Login/Logout forms in front-end
-- [x] Create dynamic forms to add contents in front-end
+---
+
+<!-- Badge Index -->
+
+[#linux]: https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black
+[#bash]: https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=GNU%20Bash&logoColor=white
+[#docker]: https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white
+[#git]: https://img.shields.io/badge/Git-fc7500?style=flat&logo=git&logoColor=white
+[#python]: https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=white
+[#django]: https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white
+[#postgres]: https://img.shields.io/badge/Postgresql-316192?style=flat&logo=Postgresql&logoColor=white
+
+<!-- URL Index -->
+
+[@linux]: https://www.linux.org/
+[@bash]: https://www.gnu.org/software/bash/
+[@docker]: https://www.docker.com/
+[@git]: https://git-scm.com/
+[@python]: https://www.python.org/
+[@django]: https://www.djangoproject.com/
+[@postgres]: https://www.postgresql.org/
+
+<!-- Diagram -->
+
+[#drawio]: ./diagram.svg
