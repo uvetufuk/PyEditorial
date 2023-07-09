@@ -18,12 +18,17 @@ This is a project based on it. It's just for personal interest and nothing more.
 * Dockerfile (featuring fixed container runtime along with runtime script)  
 * Docker-Compose (includes Nginx and PostgreSQL)
 * Run Script (Full environment installation on a clean Ubuntu OS)
+---
+#### _Diagram_
+
+![Diagram][#drawio]
+---
 
 ## Instructions
 To install the project on a fresh Ubuntu server please run the following commands:
 
 ```
-git pull https://github.com/uvetufuk/PyEditorial.git
+git clone https://github.com/uvetufuk/PyEditorial.git
 cd PyEditorial
 ./script.sh
 ```
@@ -31,11 +36,7 @@ cd PyEditorial
 This will install docker and docker-compose and run the docker-compose in the repository. You can check out the `localhost` on your browser to see the PyEditorial.
 
 ---
-#### _Diagram_
 
-![Diagram][#drawio]
-
----
 
 <!-- Badge Index -->
 
