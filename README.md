@@ -59,4 +59,4 @@ This will install docker and docker-compose and run the docker-compose in the re
 
 <!-- Diagram -->
 
-[#drawio]: ./diagram.svg
+[#drawio]: diagram.png
