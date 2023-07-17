@@ -91,7 +91,7 @@ DATABASES = {
 DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'PyEditorial',
+         'NAME': 'pyeditorialdb',
          'USER': 'postgres',
          'PASSWORD': 'great123',
          'HOST': 'postgres',
